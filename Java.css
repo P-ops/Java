@@ -1,0 +1,202 @@
+h1 { color: rgba(220,220,220,1);margin: 0 10px; text-align:justify; } 
+h2 { color: rgba(190,190,190,1); margin: 0 10px; text-align:justify;} 
+h3 { color: rgba(170,170,170,1);display:block; 
+margin: auto;margin: 0 10px; text-align:justify;  } 
+h4 { color: rgba(150,150,150,1); margin: 0 10px;text-align:justify; } 
+h5 { color: rgba(145,145,145,1);margin: 0 10px; text-align:justify; } 
+h6 { color: rgba(140,140,140,1); margin: 0 10px; text-align:justify;} 
+
+body { 
+background:#222 ; 
+font-family: 'Raleway', sans-serif;
+overflow-x: hidden;
+} 
+img{ 
+display:block; 
+margin: auto; 
+} 
+.logo{ 
+background: #000; 
+width: 100%; 
+display: flex; 
+justify-content: center; 
+width: 100%; 
+} 
+
+#lalaul { 
+position: absolute; 
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -850%); 
+margin: 0; 
+padding: 0; 
+display: flex; 
+} 
+#lalaul .lala {
+list-style: none; 
+} 
+#lalaul .lala a {
+position: relative; 
+display: block; 
+margin: 0 10px; 
+padding: 5px 10px; 
+color: #FFC618;
+font-size: 40px;
+text-decoration: none; 
+text-transform: uppercase; 
+transition: 0.5s; 
+overflow: hidden; 
+} 
+#lalaul .lala a::before {
+content: ''; 
+position: absolute; 
+top: calc(50% - 2px); 
+left: -100%; 
+width: 100%; 
+height: 4px; 
+background: #2196f3; 
+transition: 0.5s; 
+} 
+#lalaul .lala a:hover {
+color: #fff;
+} 
+#lalaul .lala a:hover::before {
+animation: animate .5s linear forwards; 
+} 
+
+@keyframes animate { 
+0% { 
+top: calc(50% - 2px); 
+left: -100%; 
+height: 4px; 
+z-index: 1; 
+} 
+50% { 
+top: calc(50% - 2px); 
+left: 0; 
+height: 4px; 
+z-index: 1; 
+} 
+100% { 
+top: 0; 
+left: 0; 
+height: 100%; 
+z-index: -1; 
+} 
+} 
+* { 
+box-sizing: border-box; 
+} 
+body { 
+margin: 0; 
+} 
+.coco { 
+height: 20vh ;
+background-color: rgba(70,70,70,1); 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+
+} 
+.social { 
+color: white; 
+list-style: none; 
+padding: 0; 
+display: flex; 
+justify-content: space-between; 
+width: 450px; 
+} 
+.social__item { 
+width: 60px; 
+height: 60px; 
+border-radius: 50%; 
+border: 5px solid #fff; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+font-size: 20px;
+transition: 0.3s;
+} 
+.social__item { 
+cursor: pointer; 
+} 
+.vk:hover { 
+border-color:dodgerblue; 
+box-shadow: 0px 0px 45px dodgerblue; 
+text-shadow: 0px 0px 45px dodgerblue; 
+color: dodgerblue; 
+} 
+.facebook:hover { 
+border-color:blue; 
+box-shadow: 0px 0px 45px blue ; 
+color: blue; 
+} 
+.google:hover { 
+border-color:wheat; 
+box-shadow: 0px 0px 45px wheat; 
+color: wheat; 
+} 
+.whatsapp:hover { 
+border-color:green; 
+box-shadow: 0px 0px 45px green ; 
+color: green; 
+} 
+.instagram:hover { 
+border-color:fuchsia; 
+box-shadow: 0px 0px 45px fuchsia; 
+color: fuchsia; 
+}
+.sketchfab-embed-wrapper {
+    display: block;
+  margin: 0 auto;
+    display: flex; 
+justify-content: center; 
+}
+
+/* form styles */
+form .row {
+    display: block;
+    padding: 7px 8px;
+    margin-bottom: 7px;
+}
+form .row:hover {
+    background: #f1f7fa;
+}
+
+form label {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 120px;
+    padding: 6px 0;
+    color: #464646;
+    vertical-align: top;
+}
+form .req { color: #ca5354; }
+
+form .note {
+    font-size: 1.2em;
+    line-height: 1.33em;
+    font-weight: normal;
+    padding: 2px 7px;
+    margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus { outline: none; }
+
+/* placeholder styles: http://stackoverflow.com/a/2610741/477958 */
+::-webkit-input-placeholder { color: #aaafbd; font-style: italic; } /* WebKit */
+:-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #aaafbd; font-style: italic; } /* Internet Explorer 10+ */
+
+form .txt {
+    display: inline-block;
+    padding: 8px 9px;
+    padding-right: 30px;
+    width: 240px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.35em;
+    font-weight: normal;
+    color: #898989;
+}
